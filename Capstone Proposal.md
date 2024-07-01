@@ -26,7 +26,7 @@ Wine enthusiasts and connoisseurs often seek to understand the flavor profile of
 
 ### Tech Stack
 
-- Frontend: React, HTML, CSS, JavaScript
+- Frontend: React, HTML, SCSS, JavaScript
 - Backend: Node.js, Express
 - Database: 
 - Libraries: Axios for API calls
@@ -38,9 +38,9 @@ Wine enthusiasts and connoisseurs often seek to understand the flavor profile of
 
 ### Sitemap
 
-- Home Page: Introduction and description of the tool
-- Input Page: Form for users to input wine characteristics
-- Prediction Result Page: Display predicted flavor profile with visualizations
+- **Home Page:** Introduction and description of the tool
+- **Input Page:** Form for users to input wine characteristics
+- **Prediction Result Page:** Display predicted flavor profile with visualizations
 
 ### Mockups
 
@@ -60,12 +60,12 @@ Does your project include any login or user profile functionality? If so, descri
 
 ## Roadmap
 
-- **Sprint 1:**
+**Sprint 1:**
 - Set up project structure and environment
 - Implement basic frontend components (Home Page, Input Page)
 - Set up backend with basic endpoints
 
-- **Sprint2:** 
+**Sprint2:** 
 - Integrate AI model for prediction
 - Implement prediction result page
 - Create basic visualizations for flavor profile
