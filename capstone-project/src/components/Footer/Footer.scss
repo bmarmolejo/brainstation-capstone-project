@@ -1,0 +1,33 @@
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/colours' as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  &__logo {
+font-size: 1.2rem;    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+
+      &:hover {
+        fill: black;
+      }
+    }
+  }
+}
