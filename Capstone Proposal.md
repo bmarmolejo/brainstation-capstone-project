@@ -82,15 +82,16 @@ Wine enthusiasts, connoisseurs, and professionals often seek to understand the f
 
 **Homepage:**
 
-![homepage](https://drive.google.com/file/d/1lC_93jKz9dlLg2mMhB6Gz-zoTJylYGNJ/view?usp=sharing)
+![homepage](https://drive.google.com/uc?export=view&id=1lC_93jKz9dlLg2mMhB6Gz-zoTJylYGNJ)
  
- **Inputs:**
+**Inputs:**
  
-![inputs](https://drive.google.com/file/d/1L3KrzfHuniKKIOECy9FxYD0F87nBn0ki/view?usp=sharing) 
+![inputs](https://drive.google.com/uc?export=view&id=1L3KrzfHuniKKIOECy9FxYD0F87nBn0ki) 
 
 **Prediction:**
 
-![enter image description here](https://drive.google.com/file/d/1YifzTkp2IzEhfVfbDoEEiuJyid1JrDfA/view?usp=sharing)
+![prediction](https://drive.google.com/uc?export=view&id=1YifzTkp2IzEhfVfbDoEEiuJyid1JrDfA)
+
 
   
 
