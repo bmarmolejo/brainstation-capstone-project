@@ -1,16 +1,18 @@
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 
 //Pages
 import Homepage from './pages/Homepage/Homepage';
 import InputPage from './pages/InputPage/InputPage';
+import PredictionPage from './pages/PredictionPage/PredictionPage';
+import ContactPage from './pages/ContactPage/ContactPage'; 
+import SignIn from './pages/SignIn/SignIn'; 
+
 
 //Components
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import PredictionPage from './pages/PredictionPage/PredictionPage';
-import ContactPage from './pages/ContactPage/ContactPage'; 
-import SignIn from './pages/SignIn/SignIn'; 
 
   function App() {
     return (
@@ -20,9 +22,9 @@ import SignIn from './pages/SignIn/SignIn';
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/input" element={<InputPage />} />
-            <Route path="/prediction" element={<PredictionPage />} />
+            <Route path="/enobot" element={<PredictionPage />} />
             <Route path="/contact" element={<ContactPage />} /> 
-            <Route path="/signup" element={<SignIn />} /> 
+            <Route path="/signin" element={<SignIn />} /> 
           </Routes>
           <Footer />
         </BrowserRouter>

@@ -1,14 +1,16 @@
-import React from 'react';
-import './SignIn.scss';
+import React from "react";
+import "./SignIn.scss";
+
+// Dummy function for example purposes
 
 const SignIn = () => {
-    return (
-        <>
-            <main className="main">
-                <h1>SignIn</h1>
-            </main>
-        </>
-    );
+  return (
+    <>
+      <main className="main">
+        <h1>Sign In</h1>
+      </main>
+    </>
+  );
 };
 
 export default SignIn;

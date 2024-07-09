@@ -1,0 +1,20 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/globals' as *;
+
+.prediction-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    text-align: center;
+    color: $eno-black;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  }
+
