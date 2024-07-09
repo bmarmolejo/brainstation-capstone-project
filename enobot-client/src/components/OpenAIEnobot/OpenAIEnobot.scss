@@ -1,65 +1,57 @@
-import { useState } from "react";
-import axios from "axios";
-// import "./App.scss";
+@use '../../styles/partials/colours' as *; 
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
 
-const HTTP_ENDPOINT = "http://localhost:8080/chatbot";
 
-async function sendPrompt(prompt) {
-  const response = await axios.post(HTTP_ENDPOINT, { prompt });
-  return response.data;
-}
+.openai-enobot {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 2rem 2rem;
+    max-width: 45vw;
+    margin: 0 auto; 
+    background-color: $eno-white;
+    border-radius: 1rem;
+    border-color: 1px solid $eno-black;
 
-const OpenAIChatbot = () => {
-  const [prompt, setPrompt] = useState("");
-  const [response, setResponse] = useState("");
-  const [error, setError] = useState("");
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    if (!prompt.trim()) return;
-    setError("");
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        padding: 1rem 0rem;
+        // max-width: 100vw;
+        margin: 0 auto; 
+        width: 100%;
+        background-color: $eno-red;
+        color: white;
+        border-radius: 2rem;
 
-    try {
-      const resData = await sendPrompt(prompt);
-      setResponse(resData);
-    } catch (error) {
-      setError("Failed to fetch response. Please try again.");
+
+
+        img {
+            width: 6rem; 
+            height: 6rem; 
+            border-radius: 50%;
+            background-color: $eno-white;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+
+        }
     }
 
-    setPrompt("");
-  };
-
-  const handlePrompt = (event) => {
-    setPrompt(event.target.value);
-  };
-
-  return (
-    <div className="container">
-      <h1 className="title">OpenAI Enobot</h1>
-      <form className="form" onSubmit={handleSubmit}>
-        // <label>Ask a question</label>
-        <div className="form-container">
-          <div className="form-group">
-            <input
-              type="text"
-              placeholder="Enter your question here ..."
-              value={prompt}
-              onChange={handlePrompt}
-            />
-          </div>
-          <button className="btn" type="submit">
-            Submit
-          </button>
-        </div>
-      </form>
-      {error && <div className="error">{error}</div>}
-      <div className="response">
-        <p>
-          {response || "Submit your question in the text field above ..."}
-        </p>
-      </div>
-    </div>
-  );
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        padding: 2rem 2rem;
+        max-width: 100vw;
+        margin: 0 auto; 
+        background-color: $eno-white;
+        border-radius: 1rem;
+        color: $eno-black;
+    }
 }
-
-export default OpenAIChatbot;

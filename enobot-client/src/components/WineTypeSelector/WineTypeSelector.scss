@@ -1,0 +1,46 @@
+@use '../../styles/partials/colours' as *;
+
+.wine-type-selector {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-evenly; 
+  margin-top: 20px;
+}
+
+.wine-type-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s;
+  text-align: center;
+  min-height: 100px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:nth-child(5) span {
+    width: 85px; 
+  }
+
+  span {
+    font-weight: bold;
+    color: $eno-red;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &.selected .wine-type-icon {
+    border: 2px solid $eno-red;
+    border-radius: 50%;
+    padding: 5px;
+  }
+}
+
+.wine-type-icon {
+  width: 35px; 
+  height: 35px; 
+  margin-bottom: 5px; 
+}
