@@ -27,12 +27,12 @@ const PredictionPage = () => {
   }
 
   return (
-    <div className="prediction-page">
+    <div className="prediction">
       <h1>Wine Tasting Profile</h1>
       <InputDetails type={type} variety={variety} region={region} />
       <OpenAIEnobot type={type} variety={variety} region={region} />
       <Link to="/input">
-        <button className="find-another-button">Let's find out about another wine profile</button>
+        <button className="prediction__button">Let's find out about another wine profile</button>
       </Link>
     </div>
   );

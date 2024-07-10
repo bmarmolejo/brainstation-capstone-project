@@ -84,20 +84,24 @@
   }
 
   .footer__bottom {
-    background: rgba(160, 1, 70, 0.9); // Slightly different color for the bottom part
-    padding: 0.5rem 0; // Reduced padding for the bottom part
+    background: $eno-wine; // Slightly different color for the bottom part
+    padding: 1rem 0; // Reduced padding for the bottom part
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 1rem;
+    color: white;
+    border-radius: 10px;
 
     p {
       margin-bottom: 0.5rem;
     }
 
     .footer__by {
-      color: white;
       text-decoration: none;
+      color: white;
+      font-size: 1rem;
 
       &:hover {
         color: darken(white, 10%);

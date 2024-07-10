@@ -12,8 +12,8 @@
   margin: 0 auto;
   max-width: 100%;
   width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Add shadow to the header
-  border-bottom: 1px solid #ddd; // Light gray line
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
 
   &__logo-container {
     display: flex;
@@ -50,7 +50,7 @@
         bottom: 0;
         left: 0;
         width: 0;
-        height: 2px;
+        height: 0.125rem;
         background-color: $eno-red;
         transition: width 0.3s ease;
       }
@@ -60,14 +60,14 @@
       }
 
       &:hover {
-        color: $eno-red; // Keep other links black on hover
+        color: $eno-red;
       }
     }
 
     .get-started-btn {
       background-color: $eno-red;
       border: none;
-      border-radius: 5px;
+      border-radius: 0.3125rem;
       color: white;
       padding: 0.5rem 1rem;
       cursor: pointer;
@@ -76,39 +76,39 @@
 
       &:hover {
         background-color: darken($eno-red, 10%);
-        color: white; // Change the button text to white on hover
+        color: white;
       }
     }
 
     &--signin {
-      width: 24px;
-      height: 24px;
+      width: 1.5rem;
+      height: 1.5rem;
       cursor: pointer;
     }
   }
 
   @include tablet {
     .header__nav {
-      justify-content: flex-end; // Align items to the right on tablet
+      justify-content: flex-end;
     }
   }
 
   @media (max-width: $tablet-breakpoint) {
     .header__nav {
-      justify-content: flex-end; // Align items to the right on mobile
+      justify-content: flex-end;
 
       a:not(.get-started-btn):not(.header__nav--signin) {
-        display: none; // Hide Home and Contact Us links on mobile
+        display: none;
       }
 
       .get-started-btn {
-        margin-left: auto; // Push the button to the right
+        margin-left: auto;
       }
 
       &--signin {
-        width: 20px; // Make the sign-in icon smaller on mobile
-        height: 20px; // Maintain aspect ratio
-        display: block; // Ensure the icon is displayed
+        width: 1.25rem;
+        height: 1.25rem;
+        display: block;
       }
     }
   }

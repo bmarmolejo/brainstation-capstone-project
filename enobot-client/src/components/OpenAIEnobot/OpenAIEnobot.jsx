@@ -37,7 +37,7 @@ const OpenAIEnobot = ({ type, variety, region }) => {
     <div className="openai-enobot">
       <div className="openai-enobot__header">
         <img src="/src/assets/images/enobot-black.svg" alt="EnoBot Icon" className="enobot-icon" />
-        <span>Hi! I'm EnoBot.</span>
+        <span>Hello there! I'm EnoBot, your personal wine sommelier. Let's talk wine! </span>
       </div>
       <div className="openai-enobot__body">
         {error ? <div className="error">{error}</div> : <p>{response || 'Loading...'}</p>}
