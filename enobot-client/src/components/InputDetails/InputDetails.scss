@@ -1,15 +1,15 @@
 @use '../../styles/partials/colours' as *;
 
-.input-details {
+.input{
   display: flex;
   justify-content: space-around;
   margin-bottom: 2rem;
 
-  .input-detail {
+  &__detail {
     display: flex;
     align-items: center;
 
-    .input-icon {
+    &--icon {
       width: 2rem;
       height: 2rem;
       margin-right: 0.5rem;

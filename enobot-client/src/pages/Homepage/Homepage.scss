@@ -2,3 +2,10 @@
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/globals' as *;
+
+hr {
+    margin: 2em auto; /* centred margin */
+    height: 2px; /* thickness of the line */
+    background-color: black; /* colour of the line */
+    border: none; /* no border */
+  }

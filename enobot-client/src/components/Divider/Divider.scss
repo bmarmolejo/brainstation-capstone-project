@@ -1,0 +1,42 @@
+@use '../../styles/partials/colours' as *; 
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/globals' as *;
+
+.divider {
+  margin: auto;
+  margin-top: 80px;
+  width: 60%;
+  position: relative;
+
+  &__shadow {
+    overflow: hidden;
+    height: 10px;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: -25px auto 0;
+      width: 100%;
+      height: 25px;
+      border-radius: 125px / 12px;
+      box-shadow: 0 0 8px $eno-red;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    background: white;
+    box-shadow: 0 2px 4px $eno-red;
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: -35px;
+    margin-left: -35px;
+
+    img {
+      max-width: 60px;
+    }
+  }
+}

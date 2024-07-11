@@ -18,7 +18,7 @@ const HeroSection = () => {
           flavors that suit your palate, enhancing every sip and elevating your wine experience.
         </p>
         <Link to="/input">
-          <button className="cta-button">Unveil The Taste</button>
+          <button className="hero__description--button">Unveil The Taste</button>
         </Link>
       </div>
       <div className="hero__image">
