@@ -1,0 +1,25 @@
+.pricing {
+    text-align: center;
+    padding: 2rem;
+  
+    .pricing-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  
+    .pricing-description {
+      font-size: 1rem;
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+  
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  

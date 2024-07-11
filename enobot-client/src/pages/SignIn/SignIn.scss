@@ -16,14 +16,14 @@
     filter: drop-shadow(0 0 0.125rem #000000);
     border-radius: 3.125rem;
     width: 22.5rem;
-    height: 26.25rem;
+    height: auto;
     background-color: $eno-white;
     padding: 2.5rem;
 
     img {
       position: absolute;
       height: 1.25rem;
-      top: 13.125rem;
+      top: 15.125rem;
       right: 3.75rem;
       cursor: pointer;
     }

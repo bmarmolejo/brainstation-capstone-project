@@ -6,13 +6,13 @@
 
 .hero {
   display: flex;
-  flex-direction: column; // Default to column for mobile
+  flex-direction: column; // column for mobile
   align-items: center;
-  padding: 2rem; // Consistent padding
-  max-width: 100%; // Ensure it takes the full width
-  width: 100%; // Ensure it takes the full width
+  padding: 2rem; 
+  max-width: 100%; 
+  width: 100%; 
   margin: 0 auto;
-  min-height: 100vh; // Ensure full height to prevent overlapping footer
+  min-height: 100vh; 
 
   &__description {
     flex: 1;

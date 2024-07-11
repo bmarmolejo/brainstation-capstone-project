@@ -9,7 +9,7 @@ async function sendPrompt(data) {
   return response.data;
 }
 
-const OpenAIEnobot = ({ type, variety, region }) => {
+const OpenAIEnobot = ({ type, variety, region, onResponse }) => {
   const [response, setResponse] = useState("");
   const [error, setError] = useState("");
 
@@ -25,6 +25,7 @@ const OpenAIEnobot = ({ type, variety, region }) => {
       try {
         const resData = await sendPrompt(data);
         setResponse(resData);
+        onResponse(resData); // Call the callback function with the response
       } catch (error) {
         setError("Failed to fetch response. Please try again.");
       }
@@ -40,7 +41,11 @@ const OpenAIEnobot = ({ type, variety, region }) => {
         <span>Hello there! I'm EnoBot, your personal wine sommelier. Let's talk wine! </span>
       </div>
       <div className="openai-enobot__body">
-        {error ? <div className="error">{error}</div> : <p>{response || 'Loading...'}</p>}
+        {error ? (
+          <div className="error">{error}</div>
+        ) : (
+          <pre className="response">{response.profile || '🍷 Loading...'}</pre>
+        )}
       </div>
     </div>
   );

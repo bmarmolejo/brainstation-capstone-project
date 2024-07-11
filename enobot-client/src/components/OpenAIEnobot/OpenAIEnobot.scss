@@ -1,9 +1,8 @@
-@use '../../styles/partials/colours' as *; 
+@use '../../styles/partials/colours' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/globals' as *;
 @use '../../styles/partials/variables' as *;
-
 
 .openai-enobot {    
     display: flex;
@@ -15,9 +14,6 @@
     margin: 0 auto; 
     background-color: $eno-white;
     border-radius: 1rem;
-    // filter: drop-shadow(0 0 2px #000000);
-
-
 
     &__header {
         display: flex;
@@ -30,8 +26,6 @@
         color: white;
         border-radius: 2rem;
 
-
-
         img {
             width: 6rem; 
             height: 6rem; 
@@ -39,7 +33,6 @@
             background-color: $eno-white;
             padding: 0.5rem;
             margin-bottom: 0.5rem;
-
         }
     }
 
@@ -54,5 +47,12 @@
         background-color: $eno-white;
         border-radius: 1rem;
         color: $eno-black;
+    }
+
+    .response {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 1rem;
+        font-family: "Avenir Next", sans-serif;
     }
 }
