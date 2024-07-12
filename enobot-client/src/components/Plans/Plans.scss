@@ -6,7 +6,7 @@
 
 .plans {
   text-align: center;
-  padding: 2rem 2rem 0rem; 
+  padding: 2rem; 
   
   &__title {
     font-size: 2rem;
@@ -26,6 +26,11 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     max-width: 1200px;
-    margin-bottom: -18rem;
+    margin: 0 auto; 
+    padding: 0 1rem; 
+
+    @include tablet {
+      padding: 0 1rem;
   }
+}
 }

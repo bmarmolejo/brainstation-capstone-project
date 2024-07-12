@@ -11,7 +11,7 @@ const Homepage = () => {
     <>
       <main className="main">
         <HeroSection />
-        <Divider imageDiv={imageDiv} />
+        <Divider className="divider" imageDiv={imageDiv} />
         <Plans />
       </main>
     </>

@@ -25,7 +25,7 @@ const OpenAIEnobot = ({ type, variety, region, onResponse }) => {
       try {
         const resData = await sendPrompt(data);
         setResponse(resData);
-        onResponse(resData); // Call the callback function with the response
+        onResponse(resData);
       } catch (error) {
         setError("Failed to fetch response. Please try again.");
       }
