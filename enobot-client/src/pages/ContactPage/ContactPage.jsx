@@ -14,7 +14,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                     <label>Email</label>
-                    <input type="email" required placeholder='abc@yourmail.com'/>
+                    <input type="email" required placeholder='email@address.com'/>
                 </div>
                 <div>
                     <label>Send us a message </label>

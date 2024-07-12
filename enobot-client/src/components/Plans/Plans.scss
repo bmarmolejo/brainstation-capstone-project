@@ -4,31 +4,28 @@
 @use '../../styles/partials/globals' as *;
 @use '../../styles/partials/variables' as *;
 
-
 .plans {
-    text-align: center;
-    padding: 2rem;
-    
+  text-align: center;
+  padding: 2rem 2rem 0rem; 
   
-    &__title {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-      color: $eno-black;
-    }
-  
-    &__description {
-      font-size: 1rem;
-      margin-bottom: 2rem;
-      color: $eno-red;
-    }
-  
-    &__cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: $eno-black;
   }
-  
+
+  &__description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: $eno-red;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin-bottom: -18rem;
+  }
+}

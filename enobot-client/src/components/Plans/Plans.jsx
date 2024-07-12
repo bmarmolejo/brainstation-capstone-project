@@ -8,7 +8,6 @@ import wineryIcon from '../../assets/images/winery.svg';
 const enobotPlans = [
   {
     name: "Wine Enthusiasts",
-    popular: false,
     features: [
       "Discover the unique characteristics of wines based on grape variety, region, or type",
       "Receive tailored wine recommendations that match your taste preferences.",
@@ -24,7 +23,6 @@ const enobotPlans = [
   },
   {
     name: "Wine Retailers",
-    popular: true,
     features: [
       "Integrate your wine inventory so EnoBot can recommend wines based on user inputs from your stock.", 
       "Enhance customer satisfaction by providing personalized wine suggestions.",
@@ -40,7 +38,6 @@ const enobotPlans = [
   },
   {
     name: "Wineries",
-    popular: false,
     features: [
       "Utilize historic wine data for quality prediction, including chemical composition, acidity levels, residual sugar, alcohol content, and sensory attributes.",
       "Incorporate soil composition data to predict and enhance wine quality.",
@@ -59,8 +56,8 @@ const enobotPlans = [
 const Plans = () => {
   return (
     <div className="plans">
-      <h2 className="plans__title">Enobot Plans</h2>
-      <p className="plans__description">Begin your journey with Enobot.</p>
+      <h2 className="plans__title">EnoBot Plans</h2>
+      <p className="plans__description">Begin your journey with EnoBot.</p>
       <div className="plans__cards">
         {enobotPlans.map((plan, index) => (
           <PlansCard key={index} plan={plan} />
