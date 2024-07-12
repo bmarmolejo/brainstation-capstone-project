@@ -1,6 +1,8 @@
 @use '../../styles/partials/colours' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
 
 * {
   box-sizing: border-box;
@@ -29,19 +31,25 @@ h1 {
 }
 
 button {
+  outline: 0;
   margin-top: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 2rem;
   font-size: 1rem;
   color: white;
   background-color: $eno-red;
   border: none;
-  border-radius: 5px;
+  border-radius: 35px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s;
 
-  &:hover {
-    background-color: darken($eno-red, 10%);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $eno-wine;
+    color: white;
   }
 }
 

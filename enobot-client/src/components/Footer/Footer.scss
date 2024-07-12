@@ -6,115 +6,93 @@
 
 .footer {
   background: $eno-red;
-  padding: 1rem 1rem; // Reduced padding for the main footer
   color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%; 
+  min-height: 340px;
+  clip-path: polygon(0% 65%, 1% 64.95%, 2% 64.8%, 3% 64.6%, 4% 64.3%, 5% 63.9%, 6% 63.45%, 7% 62.9%, 8% 62.25%, 9% 61.55%, 10% 60.8%,
+      11% 59.95%, 12% 59.05%, 13% 58.1%, 14% 57.1%, 15% 56.05%, 16% 55%, 17% 53.9%, 18% 52.8%, 19% 51.65%, 20% 50.5%,
+      21% 49.35%, 22% 48.2%, 23% 47.05%, 24% 45.9%, 25% 44.8%, 26% 43.75%, 27% 42.75%, 28% 41.75%, 29% 40.8%, 30% 39.9%,
+      31% 39.1%, 32% 38.35%, 33% 37.65%, 34% 37.05%, 35% 36.5%, 36% 36.05%, 37% 35.65%, 38% 35.35%, 39% 35.15%, 40% 35.05%,
+      41% 35%, 42% 35.05%, 43% 35.2%, 44% 35.45%, 45% 35.75%, 46% 36.15%, 47% 36.65%, 48% 37.2%, 49% 37.85%, 50% 38.55%,
+      51% 39.35%, 52% 40.2%, 53% 41.1%, 54% 42.05%, 55% 43.05%, 56% 44.1%, 57% 45.15%, 58% 46.3%, 59% 47.4%, 60% 48.55%,
+      61% 49.7%, 62% 50.85%, 63% 52%, 64% 53.15%, 65% 54.25%, 66% 55.35%, 67% 56.4%, 68% 57.45%, 69% 58.4%, 70% 59.35%,
+      71% 60.2%, 72% 61.05%, 73% 61.8%, 74% 62.45%, 75% 63.05%, 76% 63.6%, 77% 64.05%, 78% 64.4%, 79% 64.7%, 80% 64.85%,
+      81% 65%, 82% 65%, 83% 64.9%, 84% 64.75%, 85% 64.5%, 86% 64.2%, 87% 63.75%, 88% 63.25%, 89% 62.7%, 90% 62.05%,
+      91% 61.3%, 92% 60.5%, 93% 59.65%, 94% 58.75%, 95% 57.8%, 96% 56.8%, 97% 55.75%, 98% 54.65%, 99% 53.55%, 100% 52.4%, 100% 100%, 0% 100%);
 
-  .footer__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    padding-bottom: 1rem; // Reduced padding for the top section
-    flex-wrap: wrap;
-
-    .footer__logo-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 1rem; // Reduced margin-bottom
-
-      .footer__logo-image {
-        width: 10rem;
-        height: auto;
-        margin-bottom: 0.5rem; // Reduced margin-bottom
-      }
-
-      .footer__description {
-        font-size: 1rem;
-      }
-    }
-
-    .footer__menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-      h2 {
-        margin-bottom: 0.5rem; // Reduced margin-bottom
-      }
-
-      nav {
-        display: flex;
-        flex-direction: column;
-
-        a {
-          color: white;
-          text-decoration: none;
-          margin-bottom: 0.5rem;
-          font-size: 1rem; // Set link font size to 1rem
-
-          &:hover {
-            color: darken(white, 10%);
-          }
-        }
-      }
-    }
-
-    .footer__social-section {
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-      span {
-        margin-bottom: 0.5rem; // Reduced margin-bottom
-      }
-
-      a {
-        margin: 0 0.5rem;
-
-        .footer__social-icon {
-          width: 20px; // Adjust the size as needed
-          height: 20px; // Adjust the size as needed
-          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(106%) contrast(101%); // Make the icon white
-        }
-      }
-    }
-  }
-
-  .footer__bottom {
-    background: rgba(160, 1, 70, 0.9); // Slightly different color for the bottom part
-    padding: 0.5rem 0; // Reduced padding for the bottom part
+  &__logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    margin-top: auto;
+    padding: 1rem;
+
+    &--image {
+      width: 7rem;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    &--description {
+      font-size: .55rem;
+    }
+  }
+
+  &__social {
+    display: flex;
+    margin-top: auto;
+    padding: 1rem;
+
+    &--icon {
+      width: 20px;
+      height: 20px;
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(106%) contrast(101%);
+    }
+
+    span {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      margin: 0 0.5rem;
+    }
+  }
+
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: auto;
+    padding: 1rem;
 
     p {
       margin-bottom: 0.5rem;
     }
 
-    .footer__by {
-      color: white;
+    &--by {
       text-decoration: none;
+      color: white;
+      font-size: 1rem;
 
       &:hover {
         color: darken(white, 10%);
       }
     }
   }
+}
 
-  @media (max-width: 910px) {
-    .footer__top {
-      flex-direction: column;
-      align-items: center;
+@media (max-width: 910px) {
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
 
-      .footer__logo-section,
-      .footer__menu,
-      .footer__social-section {
-        margin-bottom: 1rem; // Reduced margin-bottom
-      }
+    &__logo,
+    &__social {
+      margin-bottom: 1rem;
     }
   }
 }

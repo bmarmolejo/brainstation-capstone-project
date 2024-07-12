@@ -1,6 +1,9 @@
 import React from "react";
 import "./Homepage.scss";
 import HeroSection from "../../components/HeroSection/HeroSection";
+import Plans from "../../components/Plans/Plans";
+import Divider from "../../components/Divider/Divider";
+import imageDiv from "../../assets/images/enobot-pink.svg";
 
 const Homepage = () => {
 
@@ -8,6 +11,8 @@ const Homepage = () => {
     <>
       <main className="main">
         <HeroSection />
+        <Divider className="divider" imageDiv={imageDiv} />
+        <Plans />
       </main>
     </>
   );

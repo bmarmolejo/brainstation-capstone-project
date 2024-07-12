@@ -7,17 +7,17 @@ import regionIcon from '../../assets/images/region.svg';
 const InputDetails = ({ type, variety, region }) => {
 
   return (
-    <div className="input-details">
-      <div className="input-detail">
-        <img src={wineTypeIcon} alt="Wine Type" className="input-icon" />
+    <div className="input">
+      <div className="input__detail">
+        <img src={wineTypeIcon} alt="Wine Type" className="input__detail--icon" />
         <span>{type}</span>
       </div>
-      <div className="input-detail">
-        <img src={grapesIcon} alt="Grapes" className="input-icon" />
+      <div className="input__detail">
+        <img src={grapesIcon} alt="Grapes" className="input__detail--icon" />
         <span>{variety.map(v => v.label).join(', ')}</span>
       </div>
-      <div className="input-detail">
-        <img src={regionIcon} alt="Region" className="input-icon" />
+      <div className="input__detail">
+        <img src={regionIcon} alt="Region" className="input__detail--icon" />
         <span>{region.label}</span>
       </div>
     </div>

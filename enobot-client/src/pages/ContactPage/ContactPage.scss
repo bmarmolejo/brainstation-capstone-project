@@ -1,69 +1,54 @@
-@use '../../styles/partials/colours' as *; 
+@use '../../styles/partials/colours' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/globals' as *;
+@use '../../styles/partials/variables' as *;
 
 .contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form--input {
+    position: relative;
+    filter: drop-shadow(0 0 0.125rem #000000);
+    background-color: $eno-white;
+    height: 80vh;
     width: 100%;
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 3rem;
+    border-radius: 3.125rem;
 
-    main {
-        background-color: $eno-white;
-        height: 80vh;
-        width: 70%;
-        padding: 3rem;
-        border-radius: 100px;
-
-        form {
-            margin: 5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            div {
-                height: 3rem;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                width: 60%;
-                margin: 0.5rem;
-
-                label {
-                    font: 400 1.2rem $eno-black;
-                    width: 20%;
-                    margin: 0 1rem;
-                }
-
-                input {
-                    align-self: stretch;
-                    width: 80%;
-                    padding: 1rem;
-                    border-radius: 5px;
-                    border: 1px solid rgba(123, 123, 123, 0.6);
-                    outline: none;
-                    font-size: 14px;
-                }
-            }
-
-            button {
-                margin: 3rem 0px;
-                padding: 10px 40px;
-                border: none;
-                border-radius: 5px;
-                background-color: $eno-red;
-                color: white;
-                font-family: 16px;
-                cursor: pointer;
-
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
-        }
+    label {
+      font: 400 1.2rem $eno-black;
+      margin: 0 1rem;
     }
+
+    input {
+      outline: 0;
+      background: white;
+      border-radius: 0.25rem;
+      width: 100%;
+      border: 0;
+      margin: 0.9375rem 0;
+      padding: 0.9375rem;
+      font-size: 0.875rem;
+      border: $eno-wine 1px solid;
+
+      &:focus {
+        box-shadow: 0 0 0.3125rem 0 $eno-red;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 0.9375rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      padding-bottom: 2rem;
+    }
+  }
 }

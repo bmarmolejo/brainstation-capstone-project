@@ -16,7 +16,8 @@
         "Provence",
         "Rhone Valley",
         "Savoie",
-        "South West France"
+        "South West France",
+        "Sauternes"
       ]
     },
     {
@@ -233,6 +234,19 @@
         "Hermosillo",
         "Zacatecas",
         "Valle de las Arcinas"
+      ]
+    },
+    {
+      "wine-world": "New World",
+      "country": "Canada",
+      "regions": [
+        "Okanagan Valley",
+        "Niagara Peninsula",
+        "Prince Edward County",
+        "Lake Erie North Shore",
+        "Similkameen Valley",
+        "Gaspereau Valley",
+        "Annapolis Valley"
       ]
     }
   ]
