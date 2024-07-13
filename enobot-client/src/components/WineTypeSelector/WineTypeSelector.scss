@@ -1,0 +1,46 @@
+@use '../../styles/partials/colours' as *;
+
+.wine-type {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  margin-top: 1.25rem;
+
+  &__icon {
+    width: 2.1875rem; 
+    height: 2.1875rem; 
+    margin-bottom: 0.3125rem; 
+  }
+
+  &__selected &__icon {
+    border: 0.125rem solid $eno-red;
+    border-radius: 50%;
+    padding: 0.3125rem;
+  }
+
+  &__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.625rem;
+    transition: transform 0.3s;
+    text-align: center;
+    min-height: 6.25rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:nth-child(5) span {
+      width: 5.3125rem; 
+    }
+
+    span {
+      font-weight: bold;
+      color: $eno-red;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+}

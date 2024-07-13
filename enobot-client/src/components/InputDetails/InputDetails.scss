@@ -1,0 +1,23 @@
+@use '../../styles/partials/colours' as *;
+
+.input{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+
+  &__detail {
+    display: flex;
+    align-items: center;
+
+    &--icon {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+    }
+
+    span {
+      font-size: 1.2rem;
+      color: $eno-black;
+    }
+  }
+}

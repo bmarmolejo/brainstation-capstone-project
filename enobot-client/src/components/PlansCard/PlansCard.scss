@@ -1,0 +1,77 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/variables' as *;
+
+.plans-cards {
+  border: 1px solid $eno-light-red;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $eno-white;
+
+  &__header {
+    &--name {
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin-top: 0.75rem;
+    }
+    
+    &--icon {
+      margin-top: 1rem;
+
+      img {
+        width: 5rem;
+        height: auto;
+      }
+    }
+  }
+
+  &__features {
+    margin-top: 2rem;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+
+    &--feature {
+      display: flex;
+      align-items: flex-start;  
+      gap: 0.75rem;
+      position: relative;
+      padding-left: 1rem;
+
+      &::before {
+        content: '';
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: $eno-red;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0.4rem;  
+      }
+    }
+  }
+
+  &__action {
+    margin-top: auto; 
+    display: flex;
+    justify-content: center;
+
+    button {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-10px);
+    border: $eno-red 2px solid;
+  }
+}

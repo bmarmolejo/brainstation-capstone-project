@@ -1,0 +1,117 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/variables' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &--image {
+      width: 10rem;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: $eno-black;
+      position: relative;
+      padding-bottom: 0.5rem;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0.125rem;
+        background-color: $eno-red;
+        transition: width 0.3s ease;
+      }
+
+      &.active:after {
+        width: 100%;
+      }
+
+      &:hover {
+        color: $eno-red;
+      }
+    }
+
+    &--button {
+      background-color: $eno-red;
+      border: none;
+      border-radius: 0.3125rem;
+      color: white !important;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1rem;
+
+      &:hover {
+        background-color: darken($eno-red, 10%);
+        color: white;
+      }
+
+      &.active:after {
+        width: 0;
+      }
+    }
+
+    &--signin {
+      width: 1.5rem;
+      height: 1.5rem;
+      cursor: pointer;
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @include tablet {
+    .header__nav {
+      justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    .header__nav {
+      justify-content: flex-end;
+
+      a:not(.header__nav--button):not(.header__nav--signin) {
+        display: none;
+      }
+
+      .header__nav--button {
+        margin-left: auto;
+      }
+
+      .header__nav--signin {
+        width: 1.25rem;
+        height: 1.25rem;
+        display: block;
+      }
+    }
+  }
+}

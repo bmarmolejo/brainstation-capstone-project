@@ -1,0 +1,70 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Avenir Next", sans-serif;
+  color: $eno-black;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+  font-weight: 600;
+  color: $eno-black;
+}
+
+button {
+  outline: 0;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: $eno-red;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $eno-wine;
+    color: white;
+  }
+}
+
+a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: $eno-black;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: $eno-red;
+  }
+}
+
+span {
+  margin-right: 1rem;
+}

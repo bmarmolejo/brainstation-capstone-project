@@ -1,0 +1,76 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/variables' as *;
+
+.prediction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80vw;
+    margin-bottom: 2rem;
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__recommendations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    gap: 2rem;
+    padding-top: 1rem;
+    width: 80%;
+
+    &--wine,
+    &--food {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+    }
+
+    &--icon {
+      width: 5rem;
+      height: 5rem;
+      margin-right: 0.5rem;
+      background-color: $eno-red;
+      border-radius: 50%;
+      padding: 0.5rem;
+    }
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .prediction__icon {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+h1 {
+  padding: 2rem 0;
+}
+
+button {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,74 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/globals' as *;
+@use '../../styles/partials/variables' as *;
+
+.login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__form--input {
+    position: relative;
+    filter: drop-shadow(0 0 0.125rem #000000);
+    border-radius: 3.125rem;
+    width: 22.5rem;
+    height: auto;
+    background-color: $eno-white;
+    padding: 2.5rem;
+
+    img {
+      position: absolute;
+      height: 1.25rem;
+      top: 15.125rem;
+      right: 3.75rem;
+      cursor: pointer;
+    }
+
+    input {
+      outline: 0;
+      background: white;
+      border-radius: 0.25rem;
+      width: 100%;
+      border: 0;
+      margin: 0.9375rem 0;
+      padding: 0.9375rem;
+      font-size: 0.875rem;
+      border: $eno-wine 1px solid;
+
+      &:focus {
+        box-shadow: 0 0 0.3125rem 0 $eno-red;
+      }
+    }
+
+    span {
+      color: $eno-red;
+      margin: 0.625rem 0;
+      font-size: 0.875rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.9375rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      padding-bottom: 2rem;
+    }
+
+    &-forgot,
+    &-signup {
+      margin: 0.9375rem 0;
+      text-align: center;
+      font-size: small;
+
+      a {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

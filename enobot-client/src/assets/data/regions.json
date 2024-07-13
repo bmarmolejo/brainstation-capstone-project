@@ -1,0 +1,253 @@
+{
+  "regions": [
+    {
+      "wine-world": "Old World",
+      "country": "France",
+      "regions": [
+        "Alsace",
+        "Beaujolais",
+        "Bordeaux",
+        "Burgundy",
+        "Champagne",
+        "Corsica",
+        "Jura",
+        "Languedoc",
+        "Loire Valley",
+        "Provence",
+        "Rhone Valley",
+        "Savoie",
+        "South West France",
+        "Sauternes"
+      ]
+    },
+    {
+      "wine-world": "Old World",
+      "country": "Italy",
+      "regions": [
+        "Abruzzo",
+        "Aosta Valley",
+        "Basilicata",
+        "Calabria",
+        "Campania",
+        "Emilia-Romagna",
+        "Friuli-Venezia Giulia",
+        "Lazio",
+        "Liguria",
+        "Lombardy",
+        "Marche",
+        "Molise",
+        "Piedmont",
+        "Apulia",
+        "Sardinia",
+        "Sicily",
+        "Trentino-Alto Adige/Südtirol",
+        "Tuscany",
+        "Umbria",
+        "Veneto"
+      ]
+    },
+    {
+      "wine-world": "Old World",
+      "country": "Spain",
+      "regions": [
+        "Andalusia",
+        "Aragon",
+        "Asturias",
+        "Balearic Islands",
+        "Basque Country",
+        "Canary Islands",
+        "Cantabria",
+        "Castile and León",
+        "Castilla-La Mancha",
+        "Catalonia",
+        "Extremadura",
+        "Galicia",
+        "La Rioja",
+        "Madrid",
+        "Murcia",
+        "Navarre",
+        "Valencia"
+      ]
+    },
+    {
+      "wine-world": "Old World",
+      "country": "Germany",
+      "regions": [
+        "Ahr",
+        "Baden",
+        "Franken",
+        "Hessische Bergstrasse",
+        "Mittelrhein",
+        "Mosel",
+        "Nahe",
+        "Pfalz",
+        "Rheingau",
+        "Rheinhessen",
+        "Saale-Unstrut",
+        "Sachsen",
+        "Württemberg"
+      ]
+    },
+    {
+      "wine-world": "Old World",
+      "country": "Portugal",
+      "regions": [
+        "Alentejo",
+        "Algarve",
+        "Beira Atlântico",
+        "Beira Interior",
+        "Douro",
+        "Dão",
+        "Lisboa",
+        "Madeira",
+        "Minho",
+        "Península de Setúbal",
+        "Távora-Varosa",
+        "Trás-os-Montes"
+      ]
+    },
+    {
+      "wine-world": "Old World",
+      "country": "Greece",
+      "regions": [
+        "Macedonia",
+        "Thrace",
+        "Epirus",
+        "Thessaly",
+        "Central Greece",
+        "Peloponnese",
+        "Ionian Islands",
+        "Aegean Islands",
+        "Crete"
+      ]
+    },
+    {
+      "wine-world": "New World",
+      "country": "United States",
+      "regions": [
+        "California",
+        "Oregon",
+        "Washington",
+        "New York",
+        "Virginia",
+        "Texas",
+        "Michigan",
+        "Missouri",
+        "New Jersey",
+        "New Mexico",
+        "Pennsylvania",
+        "Arizona",
+        "Colorado",
+        "Idaho"
+      ]
+    },
+    {
+      "wine-world": "New World",
+      "country": "Argentina",
+      "regions": [
+        "Mendoza",
+        "San Juan",
+        "La Rioja",
+        "Salta",
+        "Catamarca",
+        "Río Negro",
+        "Neuquén"
+      ]
+    },
+    {
+      "wine-world": "New World",
+      "country": "Australia",
+      "regions": [
+        "South Australia",
+        "New South Wales",
+        "Victoria",
+        "Western Australia",
+        "Tasmania",
+        "Queensland"
+      ]
+    },
+    {
+      "wine-world": "New World",
+      "country": "Chile",
+      "regions": [
+        "Aconcagua",
+        "Central Valley",
+        "Southern Chile",
+        "Atacama",
+        "Coquimbo"
+      ]
+    },
+    {
+      "wine-world": "New World",
+      "country": "New Zealand",
+      "regions": [
+        "Marlborough",
+        "Hawke's Bay",
+        "Central Otago",
+        "Wairarapa",
+        "Canterbury",
+        "Waikato"
+      ]
+    },
+    {
+      "wine-world": "New World",
+      "country": "South Africa",
+      "regions": [
+        "Breede River Valley",
+        "Coastal Region",
+        "Klein Karoo",
+        "Olifants River",
+        "Cape South Coast"
+      ]
+    },
+    {
+      "wine-world": "New World",
+      "country": "Mexico",
+      "regions": [
+        "Aguascalientes",
+        "Aguascalientes Valley",
+        "Baja California",
+        "Valle de Guadalupe",
+        "Valle de Calafia",
+        "Valle de Mexicali",
+        "Valle de San Vicente",
+        "Valle de Santo Tomás",
+        "Zona Tecate",
+        "Coahuila",
+        "Durango",
+        "La Laguna",
+        "Valle de Parras",
+        "Guanajuato",
+        "Guanajuato City",
+        "San Miguel de Allende",
+        "Dolores Hidalgo",
+        "San Felipe",
+        "Salvatierra",
+        "San Francisco del Rincón",
+        "Hidalgo",
+        "Nuevo León",
+        "Valle de Las Maravillas",
+        "Querétaro",
+        "Valle de Tequisquiapan",
+        "Sonora",
+        "Caborca",
+        "Hermosillo",
+        "Zacatecas",
+        "Valle de las Arcinas"
+      ]
+    },
+    {
+      "wine-world": "New World",
+      "country": "Canada",
+      "regions": [
+        "Okanagan Valley",
+        "Niagara Peninsula",
+        "Prince Edward County",
+        "Lake Erie North Shore",
+        "Similkameen Valley",
+        "Gaspereau Valley",
+        "Annapolis Valley"
+      ]
+    }
+  ]
+}
