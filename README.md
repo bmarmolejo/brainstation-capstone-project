@@ -56,7 +56,10 @@ Before you begin, ensure you have the following installed:
 
 ### Packages
 AXIOS
-DOTENV REACT-ROUTER-DOM SASS MATERIAL UI
+DOTENV 
+REACT-ROUTER-DOM 
+REACT-SELECT
+SASS 
 ### Installation Instructions
 
 **Clone project to local machine**
@@ -109,8 +112,8 @@ npm start
 npm start
 ```
 
-##Usage
-###Running the Application
+## Usage
+### Running the Application
 Start the client and server as described in the setup section.
 Access the client application at http://localhost:5173.
 The server will be running on http://localhost:8080.
