@@ -1,7 +1,7 @@
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 ![EnoBotLogo](https://raw.githubusercontent.com/bmarmolejo/brainstation-capstone-project/develop/enobot-client/src/assets/images/logo-black.svg)
 
@@ -55,11 +55,11 @@ Before you begin, ensure you have the following installed:
 
 
 ### Packages
-AXIOS
-DOTENV 
-REACT-ROUTER-DOM 
-REACT-SELECT
-SASS 
+- AXIOS
+- DOTENV 
+- REACT-ROUTER-DOM 
+- REACT-SELECT
+- SASS 
 ### Installation Instructions
 
 **Clone project to local machine**
@@ -97,17 +97,7 @@ mv .env.sample .env
 ```
   
 
-**Run application
-**
-```zsh
-npm start
-```
-
-
-`REACT_APP_BASE_URL= <enobot-server>`
-
-6. Run application
-
+** Run application**
 ```zsh
 npm start
 ```
@@ -127,26 +117,30 @@ The server will be running on http://localhost:8080.
 - Uncommon wine and grape variety recognition.
 
 ## Technologies Used
-React
-Node.js
-Express
-OpenAI API
-Axios
+- React
+- Node.js
+- Express
+- OpenAI API
+- Axios
 
 ## Future Implementation 
 
 
 ### Phase 2
 
-- Friends: Enabling feature to link and add other users to your profile. The user profile will include a box that contains all friends and other profiles will have an “add friend” button. 
+- *Advanced Wine Recommendations:* Enhance the recommendation engine to provide more personalized wine suggestions based on detailed user preferences, including taste history and feedback.
+
+- *User Profiles:* Introduce user profiles where users can save their wine preferences, tasting notes, and favorite wines. Profiles will also display users' wine-tasting activity and history.
+
+- *Social Sharing:* Enable users to share their wine predictions and recommendations on social media platforms, fostering community engagement and attracting more users to the app.
 
 ### Phase 3
 
-- Testimonials: Enables users that have a link throughout friendship to post testimonials in each other's profile. Also enabling the receiver to delete testimonials. 
+- *Friends and Community:* Enable users to connect with other wine enthusiasts within the app. Users can add friends, share recommendations, and view friends' wine-tasting activities.
 
-- Likes: Implementing a like button in the profile.
+- *Expert Reviews and Testimonials:* Integrate expert wine reviews and user testimonials within the app. Users can read and write reviews for wines they have tried, providing valuable feedback for other users.
 
-- Views: Implementing a view counter that will be updated every time another user visualizes the user’s profile. 
+- *Event Notifications:* Implement a feature to notify users about wine-tasting events, workshops, and promotions based on their location and preferences. This will help users stay informed and engaged with the wine community. 
 
 ## Deployed version
 
@@ -159,4 +153,4 @@ https://enobot.netlify.app/
 [@bmarmolejo](https://github.com/bmarmolejo)
 
 ## Contact
-If you have any questions or feedback, please reach out to [bmarmolejo@gmail.com].
+If you have any questions or feedback, please reach out to bmarmolejo@gmail.com.
