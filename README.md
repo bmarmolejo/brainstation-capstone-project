@@ -7,10 +7,7 @@
 
 <p align="center">
     <br />
-    <a href="https://github.com/bmarmolejo/brainstation-capstone-project"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/bmarmolejo/brainstation-capstone-project">View Demo</a>
+    <a href="https://enobot.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/bmarmolejo/brainstation-capstone-project/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
@@ -20,7 +17,7 @@
 
 # EnoBot
 
-***EnoBot* **is a web application designed to predict the flavor profile of wines based on user inputs like wine type, grape variety, and region. The app provides wine recommendations and food pairings using data fetched dynamically from OpenAI API.
+**EnoBot** is a web application designed to predict the flavor profile of wines based on user inputs like wine type, grape variety, and region. The app provides wine recommendations and food pairings using data fetched dynamically from OpenAI API.
 
 ## Table of Contents
 
@@ -41,17 +38,11 @@
 9. [Author](#author)
 10. [Contact](#contact)
 
-##Project Structure
+## Project Structure
 The project is divided into two main folders:
 
 - **enobot-client:** Contains the frontend code.
 - **enobot-server:** Contains the backend code.
-
-### Built With
-
-* [![React][React.js]][React-url]
-* [![node][node.com]][node-url]
-
 
 ## Setup and Installation
 
@@ -132,7 +123,7 @@ The server will be running on http://localhost:8080.
 - Friendly and casual response tone.
 - Uncommon wine and grape variety recognition.
 
-##Technologies Used
+## Technologies Used
 React
 Node.js
 Express
@@ -164,5 +155,5 @@ https://enobot.netlify.app/
 
 [@bmarmolejo](https://github.com/bmarmolejo)
 
-##Contact
+## Contact
 If you have any questions or feedback, please reach out to [bmarmolejo@gmail.com].
