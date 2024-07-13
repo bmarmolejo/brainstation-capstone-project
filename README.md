@@ -97,7 +97,8 @@ mv .env.sample .env
 ```
   
 
-*Run application*
+**Run application**
+
 ```zsh
 npm start
 ```
@@ -150,7 +151,7 @@ https://enobot.netlify.app/
 
 ## Author
 
-[@bmarmolejo](https://github.com/bmarmolejo)
+[Brenda Marmolejo](https://github.com/bmarmolejo)
 
 ## Contact
 If you have any questions or feedback, please reach out to bmarmolejo@gmail.com.
