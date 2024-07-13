@@ -51,7 +51,7 @@ const RegionSelector = ({ onChange }) => {
         options={formattedRegions}
         className="basic-single-select"
         classNamePrefix="select"
-        placeholder="Select a wine region or country"
+        placeholder="Select a wine region or a country"
         styles={customStyles}
         components={{ Option: CustomOption }}
         isSearchable

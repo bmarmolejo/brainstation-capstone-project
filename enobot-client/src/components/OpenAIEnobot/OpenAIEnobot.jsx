@@ -20,7 +20,6 @@ const OpenAIEnobot = ({ type, variety, region, onResponse }) => {
         variety: variety.map(item => item.value), 
         region: region.value,
       };
-      console.log('Sending data to server:', data);
 
       try {
         const resData = await sendPrompt(data);

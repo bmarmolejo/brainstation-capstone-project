@@ -30,10 +30,6 @@
       width: 100%;
 
       &::after {
-        // content: '';
-        // position: absolute;
-        // left: 0;
-        // bottom: 0;
         width: 94%; 
         border-bottom: .2rem solid $eno-red;
       }
@@ -68,16 +64,16 @@
 
     &__description {
       flex: 1;
-      align-items: flex-start; // Align items to the start for tablet and desktop
-      text-align: left; // Left align text for tablet and desktop
+      align-items: flex-start; 
+      text-align: left; 
       padding-right: 2rem; 
-      width: auto; // Revert width for tablet and desktop
+      width: auto; 
     }
 
     &__image {
       flex: 1;                
       max-width: 50%;  
-      margin-top: 0; // Remove margin for tablet and desktop
+      margin-top: 0; 
     }
   }
 }

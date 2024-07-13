@@ -5,22 +5,22 @@
 
 .divider {
   margin: auto;
-  margin-top: 80px;
+  margin-top: 5rem;
   width: 60%;
   position: relative;
 
   &__shadow {
     overflow: hidden;
-    height: 10px;
+    height: 0.625rem;
 
     &::after {
       content: '';
       display: block;
-      margin: -25px auto 0;
+      margin: -1.5625rem auto 0;
       width: 100%;
-      height: 25px;
-      border-radius: 125px / 12px;
-      box-shadow: 0 0 8px $eno-red;
+      height: 1.5625rem;
+      border-radius: 7.8125rem / 0.75rem;
+      box-shadow: 0 0 0.5rem $eno-red;
     }
   }
 
@@ -29,14 +29,14 @@
     bottom: 100%;
     left: 50%;
     background: white;
-    box-shadow: 0 2px 4px $eno-red;
+    box-shadow: 0 0.125rem 0.25rem $eno-red;
     border-radius: 50%;
-    padding: 8px;
-    margin-bottom: -35px;
-    margin-left: -35px;
+    padding: 0.5rem;
+    margin-bottom: -2.1875rem;
+    margin-left: -2.1875rem;
 
     img {
-      max-width: 60px;
+      max-width: 3.75rem;
     }
   }
 }

@@ -18,14 +18,14 @@ const WineTypeSelector = ({ onChange }) => {
   };
 
   return (
-    <div className="wine-type-selector">
+    <div className="wine-type">
       {wineTypes.map((type) => (
         <div
           key={type.label}
-          className={`wine-type-option ${selectedWineType === type.label ? 'selected' : ''}`}
+          className={`wine-type__option ${selectedWineType === type.label ? 'wine-type__selected' : ''}`}
           onClick={() => handleSelect(type.label)}
         >
-          <img src={type.icon} alt={type.label} className="wine-type-icon" />
+          <img src={type.icon} alt={type.label} className="wine-type__icon" />
           <span>{type.label}</span>
         </div>
       ))}

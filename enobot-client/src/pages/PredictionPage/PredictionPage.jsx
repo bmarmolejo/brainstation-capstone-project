@@ -19,15 +19,11 @@ const PredictionPage = () => {
   useEffect(() => {
     if (!type || !variety || !region) {
       navigate("/input");
-    } else {
-      console.log("Received Type:", type);
-      console.log("Received Variety:", variety);
-      console.log("Received Region:", region);
     }
   }, [type, variety, region, navigate]);
 
   if (!type || !variety || !region) {
-    return <p>Loading...</p>;
+    return <p>🍷 Loading...</p>;
   }
 
   return (

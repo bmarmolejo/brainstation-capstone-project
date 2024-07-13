@@ -4,10 +4,6 @@
 @use '../../styles/partials/globals' as *;
 
 .basic-multi-select {
-  min-width: 300px;
-  margin: 10px 0;
-}
-
-.select__placeholder {
-  color: $eno-red !important;
+  min-width: 18.75rem;
+  margin: 1.875rem 0;
 }

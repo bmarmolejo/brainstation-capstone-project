@@ -20,8 +20,6 @@ export const getPrediction = async (type, variety, region) => {
     End the response with: "Do you want to explore a new tasting profile? Hit the red button below." or similar phrases.
   `;
 
-  console.log('Constructed prompt:', prompt);
-
   try {
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
