@@ -97,16 +97,16 @@ mv .env.sample .env
 ```
   
 
-** Run application**
+*Run application*
 ```zsh
 npm start
 ```
 
 ## Usage
 ### Running the Application
-Start the client and server as described in the setup section.
-Access the client application at http://localhost:5173.
-The server will be running on http://localhost:8080.
+- Start the client and server as described in the setup section.
+- Access the client application at http://localhost:5173.
+- The server will be running on http://localhost:8080.
 
 ## Functionality
 
