@@ -2,7 +2,7 @@
     "grapes": [
       {
         "label": "White Grapes",
-        "image": "../../assets/images/whitewine.svg",
+        "image": "enobot-client/src/assets/images/redgrapes.svg",
         "options": [
           "Chardonnay",
           "Sauvignon Blanc",
@@ -38,7 +38,7 @@
       },
       {
         "label": "Red Grapes",
-        "image": "../../assets/images/redwine.svg",
+        "image": "enobot-client/src/assets/images/redgrapes.svg",
         "options": [
           "Cabernet Sauvignon",
           "Merlot",
