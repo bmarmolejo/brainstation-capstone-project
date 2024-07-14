@@ -1,6 +1,6 @@
 import React from 'react';
 import Select, { components } from 'react-select';
-import grapesData from "../../assets/data/grapes.json";
+import grapesData from "../../assets/data/grapes.js";
 import './GrapesSelector.scss';
 
 const CustomOption = (props) => {
