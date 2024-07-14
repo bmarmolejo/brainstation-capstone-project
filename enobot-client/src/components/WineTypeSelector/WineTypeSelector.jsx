@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './WineTypeSelector.scss';
 
 const wineTypes = [
-  { label: 'Red Wine', icon: '/src/assets/images/redwine-icon.svg' },
-  { label: 'White Wine', icon: '/src/assets/images/whitewine-icon.svg' },
-  { label: 'Rose Wine', icon: '/src/assets/images/rosewine-icon.svg' },
-  { label: 'Sparkling Wine', icon: '/src/assets/images/sparklingwine-icon.svg' },
-  { label: 'Dessert or Fortified Wine', icon: '/src/assets/images/dessertwine-icon.svg' }
+  { label: 'Red Wine', icon: '/public/assets/images/redwine-icon.svg' },
+  { label: 'White Wine', icon: '/public/assets/images/whitewine-icon.svg' },
+  { label: 'Rose Wine', icon: '/public/assets/images/rosewine-icon.svg' },
+  { label: 'Sparkling Wine', icon: '/public/assets/images/sparklingwine-icon.svg' },
+  { label: 'Dessert or Fortified Wine', icon: '/public/assets/images/dessertwine-icon.svg' }
 ];
 
 const WineTypeSelector = ({ onChange }) => {
