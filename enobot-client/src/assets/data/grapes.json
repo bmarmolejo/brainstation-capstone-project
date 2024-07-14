@@ -2,7 +2,7 @@
     "grapes": [
       {
         "label": "White Grapes",
-        "image": "/public/assets/images/whitegrapes.svg",
+        "image": "../../assets/images/whitewine.svg",
         "options": [
           "Chardonnay",
           "Sauvignon Blanc",
@@ -38,7 +38,7 @@
       },
       {
         "label": "Red Grapes",
-        "image": "/public/assets/images/redgrapes.svg",
+        "image": "../../assets/images/redwine.svg",
         "options": [
           "Cabernet Sauvignon",
           "Merlot",
