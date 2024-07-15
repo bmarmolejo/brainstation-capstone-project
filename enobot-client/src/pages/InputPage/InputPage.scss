@@ -26,6 +26,13 @@
     }
   }
 
+  p {
+    text-align: center;
+    color: $eno-black;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
   form {
     display: flex;
     flex-direction: column;
