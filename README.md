@@ -148,6 +148,8 @@ npm start
 
 - *Social Sharing:* Enable users to share their wine predictions and recommendations on social media platforms, fostering community engagement and attracting more users to the app.
 
+- Wine Inventory Integration: Develop a model for wineries and wine retailers to include their inventory in the app. This will allow EnoBot to provide specific wine recommendations based on the available stock. For wineries, the model can be trained with data on chemical composition and other factors to predict wine quality.
+
 ### Phase 3
 
 - *Friends and Community:* Enable users to connect with other wine enthusiasts within the app. Users can add friends, share recommendations, and view friends' wine-tasting activities.
