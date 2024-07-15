@@ -1,3 +1,8 @@
+![Contributors][contributors-shield]
+![Forks][forks-shield]
+![Stars][stars-shield]
+![LinkedIn][linkedin-shield]
+
 [contributors-shield]: https://img.shields.io/github/contributors/bmarmolejo/enobot.svg?style=for-the-badge
 [contributors-url]: https://github.com/bmarmolejo/enobot/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/bmarmolejo/enobot.svg?style=for-the-badge
