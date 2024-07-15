@@ -19,6 +19,10 @@
 
 **EnoBot** is a web application designed to predict the flavor profile of wines based on user inputs like wine type, grape variety, and region. The app provides wine recommendations and food pairings using data fetched dynamically from OpenAI API.
 
+![EnoBotFront](https://raw.githubusercontent.com/bmarmolejo/brainstation-capstone-project/develop/enobot-client/src/assets/images/enobot-frontpage.png)
+
+**Note:** This project is a work in progress. Future plans include making EnoBot a robust application for wine education and wine enthusiasts. The bot can also be trained to use inventory data from wine retailers or specialized information from wineries, including chemical composition, to predict wine quality.
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
