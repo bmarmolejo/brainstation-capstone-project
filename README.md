@@ -1,7 +1,11 @@
-<!-- [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![LinkedIn][linkedin-shield]][linkedin-url] -->
+[contributors-shield]: https://img.shields.io/github/contributors/bmarmolejo/enobot.svg?style=for-the-badge
+[contributors-url]: https://github.com/bmarmolejo/enobot/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/bmarmolejo/enobot.svg?style=for-the-badge
+[forks-url]: https://github.com/bmarmolejo/enobot/network/members
+[stars-shield]: https://img.shields.io/github/stars/bmarmolejo/enobot.svg?style=for-the-badge
+[stars-url]: https://github.com/bmarmolejo/enobot/stargazers
+[linkedin-shield]: https://img.shields.io/badge/LinkedIn-Follow%20Me-blue?style=for-the-badge&logo=linkedin
+[linkedin-url]: https://www.linkedin.com/in/bmarmolejo
 
 ![EnoBotLogo](https://raw.githubusercontent.com/bmarmolejo/brainstation-capstone-project/develop/enobot-client/src/assets/images/logo-black.svg)
 
