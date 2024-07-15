@@ -17,16 +17,15 @@ const OpenAIEnobot = ({ type, variety, region, onResponse }) => {
   useEffect(() => {
     const fetchPrediction = async () => {
       const data = {
-        type,
-        variety: variety.map(item => item.value), 
-        region: region.value,
+        type: type || '',
+        variety: variety.length ? variety.map(item => item.value) : [], 
+        region: region?.value || '',
       };
 
       try {
         const resData = await sendPrompt(data);
         setResponse(resData);
         onResponse(resData);
-        window.scrollTo(0, 0);
       } catch (error) {
         setError("Failed to fetch response. Please try again.");
       }

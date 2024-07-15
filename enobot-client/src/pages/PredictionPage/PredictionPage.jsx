@@ -17,12 +17,17 @@ const PredictionPage = () => {
   const [response, setResponse] = useState(null);
 
   useEffect(() => {
-    if (!type || !variety || !region) {
+    if (!type && (!variety || variety.length === 0) && !region) {
       navigate("/input");
     }
   }, [type, variety, region, navigate]);
 
-  if (!type || !variety || !region) {
+  const handleResponse = (resData) => {
+    setResponse(resData);
+    window.scrollTo(0, 0); // Scroll to top when response is received
+  };
+
+  if (!type && (!variety || variety.length === 0) && !region) {
     return <p>🍷 Loading...</p>;
   }
 
@@ -36,7 +41,7 @@ const PredictionPage = () => {
           type={type}
           variety={variety}
           region={region}
-          onResponse={setResponse}
+          onResponse={handleResponse}
         />
         {response && (
           <div className="prediction__recommendations">
