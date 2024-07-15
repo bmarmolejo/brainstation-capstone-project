@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "react-select": "^5.8.0"
+    "react-select": "^5.8.0",
+    "build": "vite build"
+
   }
 }
