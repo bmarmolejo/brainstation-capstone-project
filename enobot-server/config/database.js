@@ -1,26 +1,12 @@
-import mysql from 'mysql2/promise';
+// database.js
+import { createClient } from '@supabase/supabase-js';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-const db = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0
-});
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
 
-(async () => {
-  try {
-    const connection = await db.getConnection();
-    console.log('Database connection successful');
-    connection.release();
-  } catch (error) {
-    console.error('Database connection failed:', error.message);
-  }
-})();
+const supabase = createClient(supabaseUrl, supabaseKey);
 
-export default db;
+export default supabase;
