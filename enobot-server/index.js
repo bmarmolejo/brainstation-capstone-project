@@ -9,7 +9,7 @@ const app = express();
 
 const allowedOrigins = [
   'http://localhost:5173', 
-  'https://enobot.netlify.app', // Deployed URL
+  'https://enobot.netlify.app',
 ];
 
 const corsOptions = {
