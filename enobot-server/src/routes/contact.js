@@ -1,6 +1,5 @@
-// routes/contact.js
 import express from 'express';
-import supabase from '../database.js';
+import db from '../database.js';
 
 const router = express.Router();
 
@@ -12,16 +11,13 @@ router.post('/', async (req, res) => {
   }
 
   try {
-    const { data, error } = await supabase
-      .from('contact_messages')
-      .insert([{ name, email, message }]);
-
-    if (error) throw error;
-
-    res.status(200).json({ message: 'Message received', data });
+    const [result] = await db.execute(
+      'INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)',
+      [name, email, message]
+    );
+    res.status(200).json({ success: 'Message sent!' });
   } catch (error) {
-    console.error('Error saving message:', error.message);
-    res.status(500).json({ error: 'Failed to save message' });
+    res.status(500).json({ error: 'Failed to send message' });
   }
 });
 

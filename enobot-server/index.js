@@ -1,27 +1,18 @@
 import express from 'express';
 import cors from 'cors';
-import db from './config/database.js';
-import predictionRoutes from './src/routes/prediction.js';
+import bodyParser from 'body-parser';
+import contactRouter from './routes/contact.js';
 
 const app = express();
+const port = process.env.PORT || 8080;
 
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5173', 
+  optionsSuccessStatus: 200
+}));
+app.use(bodyParser.json());
+app.use('/api/contact', contactRouter);
 
-app.use(express.json());
-app.use('/api/predict', predictionRoutes);
-
-app.post('/api/contact', async (req, res) => {
-  const { name, email, message } = req.body;
-  try {
-    const [result] = await db.query('INSERT INTO messages (name, email, message) VALUES (?, ?, ?)', [name, email, message]);
-    res.status(201).json({ id: result.insertId });
-  } catch (error) {
-    console.error('Error saving message:', error);
-    res.status(500).json({ error: 'Failed to save message' });
-  }
-});
-
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
