@@ -19,6 +19,7 @@ const InputPage = () => {
   return (
     <main className="main">
       <h1>Define Your Wine</h1>
+      <p>Select one or more options to get your wine profile prediction. You can choose from wine type, grape variety, or region, or select all three.</p>
       <form onSubmit={handleSubmit}>
         <WineTypeSelector onChange={setType} />
         <GrapeSelector onChange={setVariety} />

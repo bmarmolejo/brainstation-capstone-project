@@ -2,8 +2,11 @@
 
 .input{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
 
   &__detail {
     display: flex;

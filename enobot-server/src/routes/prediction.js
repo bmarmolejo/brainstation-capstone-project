@@ -6,8 +6,8 @@ const router = express.Router();
 router.post('/', async (req, res) => {
   const { type, variety, region } = req.body;
 
-  if (!type || !variety || !region) {
-    return res.status(400).json({ error: 'Type, variety, and region are required' });
+  if (!type && (!variety || !variety.length) && !region) {
+    return res.status(400).json({ error: 'At least one of type, variety, or region is required' });
   }
 
   try {
