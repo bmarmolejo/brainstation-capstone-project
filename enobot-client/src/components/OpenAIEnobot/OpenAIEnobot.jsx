@@ -3,11 +3,16 @@ import axios from 'axios';
 import './OpenAIEnobot.scss';
 import enobotIcon from '../../assets/images/enobot-black.svg';
 
-const HTTP_ENDPOINT = "http://localhost:8080/api/predict"; 
+const HTTP_ENDPOINT = import.meta.env.VITE_API_URL;
 
 async function sendPrompt(data) {
-  const response = await axios.post(HTTP_ENDPOINT, data);
-  return response.data;
+  try {
+    const response = await axios.post(HTTP_ENDPOINT, data);
+    return response.data;
+  } catch (error) {
+    console.error('Error sending prompt:', error);
+    throw error;
+  }
 }
 
 const OpenAIEnobot = ({ type, variety, region, onResponse }) => {
@@ -18,7 +23,7 @@ const OpenAIEnobot = ({ type, variety, region, onResponse }) => {
     const fetchPrediction = async () => {
       const data = {
         type: type || '',
-        variety: variety.length ? variety.map(item => item.value) : [], 
+        variety: variety.length ? variety.map(item => item.value) : [],
         region: region?.value || '',
       };
 

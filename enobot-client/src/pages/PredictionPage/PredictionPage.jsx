@@ -24,7 +24,7 @@ const PredictionPage = () => {
 
   const handleResponse = (resData) => {
     setResponse(resData);
-    window.scrollTo(0, 0); // Scroll to top when response is received
+    window.scrollTo(0, 0); 
   };
 
   if (!type && (!variety || variety.length === 0) && !region) {
