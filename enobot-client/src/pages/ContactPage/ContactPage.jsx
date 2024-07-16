@@ -11,11 +11,11 @@ const ContactPage = () => {
     event.preventDefault();
 
     try {
-        await axios.post(`${process.env.REACT_APP_API_URL}/api/contact`, {
-            name,
-            email,
-            message
-          });
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/contact`, {
+        name,
+        email,
+        message
+      });
       alert('Message sent! We will get back to you shortly 🍷');
       setName('');
       setEmail('');
