@@ -3,7 +3,8 @@ import axios from 'axios';
 import './OpenAIEnobot.scss';
 import enobotIcon from '../../assets/images/enobot-black.svg';
 
-const HTTP_ENDPOINT = process.env.VITE_API_URL;
+// Use import.meta.env for Vite environment variables
+const HTTP_ENDPOINT = import.meta.env.VITE_API_URL;
 
 async function sendPrompt(data) {
   const response = await axios.post(HTTP_ENDPOINT, data);
