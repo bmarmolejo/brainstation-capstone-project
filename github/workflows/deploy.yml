@@ -1,0 +1,42 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: npx netlify deploy --prod --dir=dist
+
+      - name: Call Supabase Endpoint
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          curl -X POST "${{ secrets.SUPABASE_URL }}/rest/v1/rpc/submit_contact_form" \
+          -H "apikey: ${{ secrets.SUPABASE_KEY }}" \
+          -H "Authorization: Bearer ${{ secrets.SUPABASE_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d '{"name": "GitHub Action", "email": "github@actions.com", "message": "Deployed from GitHub Actions"}'
