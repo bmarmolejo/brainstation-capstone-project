@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Footer.scss";
 import facebookIcon from "../../assets/images/facebook.svg";
 import instagramIcon from "../../assets/images/instagram.svg";
