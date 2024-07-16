@@ -4,6 +4,4 @@
   publish = "dist"
 
 [functions]
-environment = [
-  "OPENAI_API_KEY"
-]
+  directory = "functions"
