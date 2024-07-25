@@ -53,7 +53,7 @@ export const getPrediction = async (type, variety, region) => {
       axios.post(
         'https://api.openai.com/v1/chat/completions',
         {
-          model: 'gpt-3.5-turbo',
+          model: 'gpt-4o-mini',
           messages: [
             { role: 'system', content: 'You are a virtual wine expert. Your name is EnoBot, you will recommend a wine based on the type, variety, and/or region.' },
             { role: 'user', content: wineRecommendationPrompt }
